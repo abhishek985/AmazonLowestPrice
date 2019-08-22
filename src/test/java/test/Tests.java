@@ -16,7 +16,7 @@ import pages.TraversePages;
 
 
 @Listeners(extentReporting.TestListener.class)		
-public class Search {
+public class Tests {
 
 	@BeforeSuite
 	public void setUp() {
@@ -40,26 +40,27 @@ public class Search {
 	@Test(dependsOnMethods={"searcht"})
 	public void priceAssertion() {
 		try {
-		tp.assertPrice();
-		TestListener.test.get().log(Status.INFO,"Price is same on Listing page and Cart Page");}
+			tp.assertPrice();
+			TestListener.test.get().log(Status.INFO,"Price is same on Listing page and Cart Page");}
 		catch(NoSuchElementException ne) {
 			TestListener.test.get().log(Status.INFO,"Element not found");
 		}
-	
+
 	}
-	
+
 	@Test(dependsOnMethods={"searcht"})
 	public void assertCart() {
 		try {
-		tp.assertItems();
-		TestListener.test.get().log(Status.INFO,"No of items  is/are  same on Listing page and Cart Page");}
+			tp.assertItems();
+			TestListener.test.get().log(Status.INFO,"No of items  is/are  same on Listing page and Cart Page");}
 		catch(NoSuchElementException e) {
-				TestListener.test.get().log(Status.INFO,"Element not found");
-			}
+			TestListener.test.get().log(Status.INFO,"Element not found");
 		}
+	}
 
 	@AfterSuite
 	public void flush() {
+		BrowserFactory.instance.quit();
 		TestListener.extent.flush();
 	}
 }

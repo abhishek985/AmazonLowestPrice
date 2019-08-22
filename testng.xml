@@ -4,7 +4,7 @@
 	<test  name="Test">
 		
 		<classes>
-			<class name="test.Search" />
+			<class name="test.Tests" />
 		</classes>
 		
 	</test> <!-- Test -->

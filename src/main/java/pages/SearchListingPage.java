@@ -35,7 +35,8 @@ public class SearchListingPage {
 
 	public void price(Map<Integer,Map<Integer,String>> m ,Integer j) {
 		String product = PropertyValues.getPropertyValue("productName");
-		int pricefilter = Integer.parseInt(PropertyValues.getPropertyValue("pricelessthanfilter"));
+		int pricefilter = Integer.parseInt(PropertyValues.getPropertyValue("pricegreaterthanfilter"));
+		System.out.println(pricefilter);
 		
 		int n = Math.min(prices.size(), titles.size());
 		for(int i = 0;i< n;i++) {
