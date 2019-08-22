@@ -23,3 +23,4 @@ The code will traverse through all the pages and find the lowest priced product 
 # Launching Tests
 
 Just clone the repository , go to the project path and run "mvn clean test" in the terminal 
+Or can open the project in IDE and run as TESTNG Suite
