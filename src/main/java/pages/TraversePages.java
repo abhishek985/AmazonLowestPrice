@@ -11,6 +11,7 @@ import org.testng.Assert;
 import com.aventstack.extentreports.Status;
 import extentReporting.TestListener;
 import util.PropertyValues;
+import util.WaitStatementLib;
 import base.BrowserFactory;
 public class TraversePages {
 
@@ -90,7 +91,9 @@ public class TraversePages {
 			}
 
 			BrowserFactory.instance.get(href);
-			Thread.sleep(4000);
+			
+			WaitStatementLib.explicitWaitForVisibility(BrowserFactory.instance, 4, cartButton);
+			//Thread.sleep(4000);
 
 			TestListener.test.get().log(Status.INFO,String.valueOf(page));
 

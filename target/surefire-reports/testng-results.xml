@@ -5,35 +5,35 @@
       <![CDATA[Navigating to the Test URL]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="34395" started-at="2019-08-21T10:27:54Z" finished-at="2019-08-21T10:28:28Z">
+  <suite name="Suite" duration-ms="106658" started-at="2019-08-22T03:22:31Z" finished-at="2019-08-22T03:24:18Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="34395" started-at="2019-08-21T10:27:54Z" finished-at="2019-08-21T10:28:28Z">
-      <class name="test.Search">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.Search@42d3bd8b]" name="setUp" is-config="true" duration-ms="5774" started-at="2019-08-21T10:27:48Z" finished-at="2019-08-21T10:27:54Z">
+    <test name="Test" duration-ms="106658" started-at="2019-08-22T03:22:31Z" finished-at="2019-08-22T03:24:18Z">
+      <class name="test.Tests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.Tests@1324409e]" name="setUp" is-config="true" duration-ms="12101" started-at="2019-08-22T03:22:19Z" finished-at="2019-08-22T03:22:31Z">
           <reporter-output>
             <line>
               <![CDATA[Navigating to the Test URL]]>
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="searcht()[pri:0, instance:test.Search@42d3bd8b]" name="searcht" duration-ms="34310" started-at="2019-08-21T10:27:54Z" finished-at="2019-08-21T10:28:28Z">
+        <test-method status="PASS" signature="searcht()[pri:0, instance:test.Tests@1324409e]" name="searcht" duration-ms="106146" started-at="2019-08-22T03:22:31Z" finished-at="2019-08-22T03:24:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searcht -->
-        <test-method status="PASS" signature="assertCart()[pri:0, instance:test.Search@42d3bd8b]" name="assertCart" duration-ms="29" started-at="2019-08-21T10:28:28Z" depends-on-methods="test.Search.searcht" finished-at="2019-08-21T10:28:28Z">
+        <test-method status="PASS" signature="assertCart()[pri:0, instance:test.Tests@1324409e]" name="assertCart" duration-ms="329" started-at="2019-08-22T03:24:18Z" depends-on-methods="test.Tests.searcht" finished-at="2019-08-22T03:24:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assertCart -->
-        <test-method status="PASS" signature="priceAssertion()[pri:0, instance:test.Search@42d3bd8b]" name="priceAssertion" duration-ms="44" started-at="2019-08-21T10:28:28Z" depends-on-methods="test.Search.searcht" finished-at="2019-08-21T10:28:28Z">
+        <test-method status="PASS" signature="priceAssertion()[pri:0, instance:test.Tests@1324409e]" name="priceAssertion" duration-ms="127" started-at="2019-08-22T03:24:18Z" depends-on-methods="test.Tests.searcht" finished-at="2019-08-22T03:24:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- priceAssertion -->
-        <test-method status="PASS" signature="flush()[pri:0, instance:test.Search@42d3bd8b]" name="flush" is-config="true" duration-ms="332" started-at="2019-08-21T10:28:33Z" finished-at="2019-08-21T10:28:33Z">
+        <test-method status="PASS" signature="flush()[pri:0, instance:test.Tests@1324409e]" name="flush" is-config="true" duration-ms="4521" started-at="2019-08-22T03:24:23Z" finished-at="2019-08-22T03:24:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flush -->
-      </class> <!-- test.Search -->
+      </class> <!-- test.Tests -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

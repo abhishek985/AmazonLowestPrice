@@ -26,8 +26,7 @@ public class AmazonHomePage {
 	}
 
 	public void search() {
-		TestListener.test.get().log(Status.INFO,"Searching the product");
-		
+		TestListener.test.get().log(Status.INFO,"Searching the product ....");
 		String product = PropertyValues.getPropertyValue("productName");
 		searchBox.sendKeys(product);
 		srchBtn.click();
