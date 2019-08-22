@@ -8,6 +8,8 @@ Selenium (POM and Page Factory)
 Maven
 TestNG
 
+The code will traverse through all the pages and find the lowest priced product under the filter.
+
  Configurable Values :
  1. Product Name 
  2. Price filter
